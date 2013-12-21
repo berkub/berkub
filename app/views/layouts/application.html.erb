@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= content_for?(:title) ? yield(:title) : "Berkub" %></title>
+  <title><%= content_for?(:title) ? yield(:title) : t("berkub.title") %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic" %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+  <nav>
+    <ul class="navigation">
+      <li class="logo"><%= link_to_unless_current image_tag("logo_medium.png"), root_path %></li>
+      <li><%= link_to_unless_current t("nav.about"), "" %></li>
+      <li><%= link_to_unless_current t("nav.signup"), signup_path %></li>
+      <li class="login"><%= link_to_unless_current t("nav.login"), "" %></li>
+    </ul>
+  </nav>
+</header>
+
 <div class="container">
   <%= yield %>
 </div>

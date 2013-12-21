@@ -46,8 +46,14 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'bourbon'
 gem 'neat'
 gem 'simple_form'
+
+group :development do
+  gem 'guard'
+  gem 'guard-livereload', require: false
+end
 
 group :development, :test do
   gem 'minitest'

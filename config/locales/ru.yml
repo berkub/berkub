@@ -1,0 +1,10 @@
+ru:
+  berkub:
+    title: "Berkub"
+  nav:
+    about: "Что это?"
+    login: "Войти"
+    signup: "Регистрация"
+  users:
+    create:
+      notice: "Регистрация прошла успешно!"
