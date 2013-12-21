@@ -35,7 +35,7 @@ gem 'sdoc',          group: :doc, require: false
 gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -53,4 +53,8 @@ group :development, :test do
   gem 'minitest'
   gem 'rspec-rails'
   gem 'factory_girl_rails', '~> 4.0'
+end
+
+group :test do
+  gem 'database_cleaner'
 end

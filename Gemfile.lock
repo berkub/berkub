@@ -29,6 +29,7 @@ GEM
       tzinfo (~> 1.1)
     arel (5.0.0)
     atomic (1.1.14)
+    bcrypt-ruby (3.1.2)
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
@@ -40,6 +41,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    database_cleaner (1.2.0)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.0.2)
@@ -140,7 +142,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt-ruby (~> 3.1.2)
   coffee-rails (~> 4.0.0)
+  database_cleaner
   factory_girl_rails (~> 4.0)
   jbuilder (~> 1.2)
   jquery-rails
