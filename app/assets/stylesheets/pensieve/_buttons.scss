@@ -1,6 +1,6 @@
 @mixin login-button {
   border-radius: 3px;
-  background-color: #06C;
+  background-color: #0075E5;
   border-bottom: 2px solid #105296;
   color: white;
   display: block;
@@ -13,7 +13,7 @@
 }
 
 @mixin submit-button {
-  $color: #51bf5b;
+  $color: #0075E5;
   -webkit-tap-highlight-color: transparent;
   position: relative;
   border-radius: 4px;
