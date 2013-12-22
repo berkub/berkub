@@ -1,10 +1,20 @@
+$mobile: new-breakpoint(max-width 500px 6);
+
 html, body {
   -webkit-font-smoothing: antialiased;
   font-family: "Open Sans", sans-serif;
 }
 
+// body {
+//   background-repeat: no-repeat;
+//   background-position: 50% 50%;
+//   background-size: cover;
+//   background-image: image-url("blue-bg.jpg");
+// }
+
 body > .container {
   @include outer-container;
+  position: relative;
 }
 
 body > header {
@@ -12,17 +22,19 @@ body > header {
   padding: 1em;
   margin: 0 0 1.4em 0;
 
+  // HEADER NAVIGATION
   ul.navigation {
     list-style: none;
     padding: 0;
     margin: auto 2.25em;
     overflow: hidden;
 
-
     > li {
       @include inline-block;
       margin: 1.25em 0 0.15em 2.75em;
-      font-size: 0.875em;
+      font-size: em(15);
+      font-weight: bold;
+      color: #888;
 
       &.logo {
         float: left;
@@ -31,7 +43,7 @@ body > header {
 
       &.login {
         > a{
-          @include secondary_button;
+          @include login-button;
         }
       }
 
@@ -46,5 +58,4 @@ body > header {
       }
     }
   }
-
 }

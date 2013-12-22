@@ -1,8 +1,13 @@
 <%= simple_form_for @user do |f| %>
-	<%= f.input :first_name %>
-	<%= f.input :last_name %>
+	<h1><%= t("users.new.title") %></h1>
+	<fieldset class="inline">
+		<%= f.input :first_name, autofocus: true %>
+		<%= f.input :last_name %>
+	</fieldset>
 	<%= f.input :email %>
 	<%= f.input :password %>
-	<%= f.input :password_confirmation %>
-	<%= f.submit t("users.") %>
+	<div class="actions">
+		<div class="beware"><%= t("users.create.beware") %></div>
+		<%= f.submit t("users.") %>
+	</div>
 <% end %>

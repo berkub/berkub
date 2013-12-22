@@ -11,10 +11,19 @@ ru:
     error_notification:
       default_message: "Please review the problems below:"
     # Labels and hints examples
+    placeholders:
+      defaults:
+        first_name: "Мэрил"
+        last_name: "Стрип"
+        email: "Никакого спама"
+        password: "Лего запомнить, тяжело подобрать"
     labels:
       defaults:
-        password: 'Пароль'
+        password: "Пароль"
+        password_confirmation: "Еще раз"
         email: "Электропочта"
+        first_name: "Имя"
+        last_name: "Фамилия"
       user:
         new:
           # email: 'E-mail to sign in.'
