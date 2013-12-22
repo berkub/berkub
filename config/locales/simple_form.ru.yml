@@ -31,8 +31,10 @@ ru:
           # email: 'E-mail to sign in.'
         edit:
           # email: 'E-mail.'
-    # hints:
+    hints:
     #   defaults:
     #     username: 'User name to sign in.'
     #     password: 'No special characters, please.'
+      password:
+        email: "Инструкция по восстановлению пароля будут отправлены на ваш адрес электронной почты."
 

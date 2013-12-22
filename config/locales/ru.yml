@@ -13,6 +13,8 @@ ru:
         create: "Зарегистрироваться"
       session:
         create: "Войти"
+      password:
+        create: "Отправить инструкции"
   users:
     new:
       title: "Добро пожаловать"
@@ -30,4 +32,6 @@ ru:
     destroy:
       notice: ""
   passwords:
+    new:
+      title: "Забыли пароль? <br />Ничего страшного"
     recover: "Забыли пароль?"

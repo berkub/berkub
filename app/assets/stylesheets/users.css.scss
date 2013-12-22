@@ -2,12 +2,6 @@ form.new_user {
   @include span-columns(6);
   @include shift(3);
 
-  > h1 {
-    text-align: center;
-    margin-bottom: em(22);
-    font-size: em(36);
-  }
-
   fieldset.inline {
     border: none;
     padding: 0;
