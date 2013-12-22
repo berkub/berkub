@@ -49,6 +49,7 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 gem 'bourbon'
 gem 'neat'
 gem 'simple_form'
+gem 'parsley-rails'
 
 group :development do
   gem 'guard'

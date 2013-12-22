@@ -92,6 +92,8 @@ GEM
     neat (1.5.0)
       bourbon (>= 2.1)
       sass (>= 3.2)
+    parsley-rails (1.2.2.0)
+      railties (>= 3.0.0)
     pg (0.17.1)
     polyglot (0.3.3)
     pry (0.9.12.4)
@@ -187,6 +189,7 @@ DEPENDENCIES
   jquery-rails
   minitest
   neat
+  parsley-rails
   pg
   rails (= 4.1.0.beta1)
   rspec-rails
