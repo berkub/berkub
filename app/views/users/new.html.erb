@@ -7,7 +7,7 @@
 	<%= f.input :email %>
 	<%= f.input :password %>
 	<div class="actions">
-		<div class="beware"><%= t("users.create.beware") %></div>
+		<div class="beware"><%= t("users.create.beware.html", href: link_to(t("users.create.beware.terms"), "")) %></div>
 		<%= f.submit t("users.") %>
 	</div>
 <% end %>
