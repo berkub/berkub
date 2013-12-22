@@ -2,9 +2,9 @@
 <html>
 <head>
   <title><%= content_for?(:title) ? yield(:title) : t("berkub.title") %></title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", media: "all" %>
   <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic" %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -13,13 +13,21 @@
     <ul class="navigation">
       <li class="logo"><%= link_to_unless_current image_tag("logo_medium.png"), root_path %></li>
       <li><%= link_to_unless_current t("nav.about"), "" %></li>
-      <li><%= link_to_unless_current t("nav.signup"), signup_path %></li>
-      <li class="login"><%= link_to_unless_current t("nav.login"), "" %></li>
+      <% if user_logged_in? %>
+        <li><%= current_user.full_name %></li>
+        <li><%= link_to t("nav.logout"), logout_path %></li>
+      <% else %>
+        <li><%= link_to_unless_current t("nav.signup"), signup_path %></li>
+        <li class="login"><%= link_to t("nav.login"), login_path %></li>
+      <% end %>
     </ul>
   </nav>
 </header>
 
 <div class="container">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
   <%= yield %>
 </div>
 

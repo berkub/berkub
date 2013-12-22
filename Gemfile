@@ -52,6 +52,7 @@ gem 'simple_form'
 gem 'parsley-rails'
 
 group :development do
+  gem 'thin'
   gem 'guard'
   gem 'guard-livereload', require: false
 end

@@ -32,5 +32,9 @@ describe UsersController do
 		it "redirects to root_path" do
 			expect(request).to redirect_to(controller.url_after_signup)
 		end
+
+		it "logs the user in" do
+			expect(session[:user_id]).to eql(User.last.id)
+		end
 	end
 end

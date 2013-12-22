@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 		@user = User.new(user_params)
 
 		if @user.save!
-			redirect_to url_after_signup, notice: t("users.create.notice")
+			login_as(@user) && redirect_to(url_after_signup, notice: t("users.create.notice"))
 		else
 			render action: "new"
 		end

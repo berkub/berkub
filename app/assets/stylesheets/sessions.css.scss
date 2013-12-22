@@ -1,0 +1,37 @@
+form.session {
+  @include span-columns(6);
+  @include shift(3);
+
+  > h1 {
+    text-align: center;
+    margin-bottom: em(22);
+    font-size: em(36);
+  }
+
+  .actions {
+    @include fill-parent;
+
+    .forgot-password {
+      @include span-columns(2 of 6);
+      margin-top: em(10);
+
+      > a {
+        font-size: em(14);
+        color: #222;
+        text-decoration: none;
+        border-bottom: 1px dotted #8c8a8b;
+        @include transition(opacity .2s ease-in-out, color .2s ease-in-out, border-bottom .2s ease-in-out);
+
+        &:hover {
+          color: #06c;
+          border-bottom-color: #06c;
+        }
+      }
+    }
+
+    input[type="submit"] {
+      float: right;
+      @include omega;
+    }
+  }
+}

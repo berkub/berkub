@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require parsley
 //= require parsley.messages
 //= require_tree .

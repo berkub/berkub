@@ -1,19 +1,33 @@
 ru:
   berkub:
     title: "Berkub"
+    not_authorized: "Нельзя!"
   nav:
     about: "Что это?"
     login: "Войти"
+    logout: "Выйти"
     signup: "Регистрация"
   helpers:
     submit:
       user:
         create: "Зарегистрироваться"
+      session:
+        create: "Войти"
   users:
     new:
-      title: "Представьтесь, пожалуйста"
+      title: "Добро пожаловать"
     create:
       notice: "Регистрация прошла успешно!"
       beware:
         terms: "нашими условиями"
         html: "Нажимая эту кнопку вы соглашаетесь со всеми %{href}."
+  sessions:
+    new:
+      title: "Представьтесь, пожалуйста"
+    create:
+      notice: ""
+      invalid: "Почта или пароль неправильные, проверьте все еще раз."
+    destroy:
+      notice: ""
+  passwords:
+    recover: "Забыли пароль?"
