@@ -17,12 +17,12 @@ ru:
           first_name: "Мэрил"
           last_name: "Стрип"
           email: "Никакого спама"
-          password: "Лего запомнить, тяжело подобрать"
+          password: "Легко запомнить, тяжело подобрать"
     labels:
       defaults:
         password: "Пароль"
         password_confirmation: "Еще раз"
-        email: "Электропочта"
+        email: "Электронная почта"
         first_name: "Имя"
         last_name: "Фамилия"
         remember_me: "запомнить меня"

@@ -55,6 +55,10 @@ group :development do
   gem 'thin'
   gem 'guard'
   gem 'guard-livereload', require: false
+  gem 'capistrano', '~> 3.0.1'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv', github: 'capistrano/rbenv'
+  gem 'capistrano-bundler'
 end
 
 group :development, :test do

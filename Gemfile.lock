@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/capistrano/rbenv.git
+  revision: 67222bbce120323e422b051dcd167d8e2d3adbf0
+  specs:
+    capistrano-rbenv (2.0.0)
+      capistrano (~> 3.0)
+      sshkit (~> 1.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -34,6 +42,16 @@ GEM
       sass (>= 3.2.0)
       thor
     builder (3.2.2)
+    capistrano (3.0.1)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (>= 0.0.23)
+    capistrano-bundler (1.1.1)
+      capistrano (~> 3.0)
+      sshkit (>= 1.2.0)
+    capistrano-rails (1.1.0)
+      capistrano (>= 3.0.0)
+      capistrano-bundler (>= 1.0.0)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -93,6 +111,9 @@ GEM
     neat (1.5.0)
       bourbon (>= 2.1)
       sass (>= 3.2)
+    net-scp (1.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.7.0)
     parsley-rails (1.2.2.0)
       railties (>= 3.0.0)
     pg (0.17.1)
@@ -160,6 +181,12 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    sshkit (1.3.0)
+      net-scp (>= 1.1.2)
+      net-ssh
+      term-ansicolor
+    term-ansicolor (1.2.2)
+      tins (~> 0.8)
     thin (1.6.1)
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
@@ -168,6 +195,7 @@ GEM
     thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
+    tins (0.13.1)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
@@ -185,6 +213,10 @@ PLATFORMS
 DEPENDENCIES
   bcrypt-ruby (~> 3.1.2)
   bourbon
+  capistrano (~> 3.0.1)
+  capistrano-bundler
+  capistrano-rails
+  capistrano-rbenv!
   coffee-rails (~> 4.0.0)
   database_cleaner
   factory_girl_rails (~> 4.0)
