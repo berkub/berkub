@@ -1,43 +1,10 @@
-@mixin login-button {
-  border-radius: 3px;
-  background-color: #06C;
-  border-bottom: 2px solid #105296;
-  color: white;
-  display: block;
-  font-weight: normal;
-  padding: 8px 14px 9px 14px;
-  text-decoration: none;
-  font-size: inherit;
-  font-weight: 700;
-  line-height: 1;
-}
 
-@mixin submit-button {
-  $color: #51bf5b;
-  -webkit-tap-highlight-color: transparent;
-  position: relative;
-  border-radius: 4px;
-  border: none;
-  border-bottom: 2px solid darken($color, 11%);
-  line-height: 2.4;
-  padding: 0 0.85em;
-  color: #fff;
-  text-align: center;
-  font-size: em(18);
-  font-weight: bold;
-  @include transition(all .2s ease-out);
-  background: $color;
-  outline: none;
-
-  &:active {
-    // border-bottom-width: 1px;
-  }
-}
 
 @import "bourbon";
 // $visual-grid: true;
 @import "neat";
 @import "normalize";
+@import "pensieve/pensieve";
 @import "layout";
 @import "forms";
 @import "welcome";
