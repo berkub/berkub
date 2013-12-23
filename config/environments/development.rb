@@ -33,4 +33,8 @@ Rails.application.configure do
 
   # Set ActionMailer default url host to berkub.dev.
   config.action_mailer.default_url_options = { host: "berkub.dev" }
+
+  # Sending emails with Postmark
+  # config.action_mailer.delivery_method = :postmark
+  # config.action_mailer.postmark_settings = { api_key: "dcbca833-0cac-4fce-ba8d-687c560f3557" }
 end
