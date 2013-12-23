@@ -27,6 +27,7 @@ describe User do
 
   describe "#password_recovery_expired?" do
     it "returns true if it's been more than 24 hours since the token has been generated" do
+      expect(thom.password_recovery_expired?).to eql(false)
       thom.stubs(:password_recovery_sent_at).returns(2.years.ago)
       expect(thom.password_recovery_expired?).to eql(true)
     end
