@@ -1,9 +1,9 @@
 class WelcomeController < ApplicationController
-	before_action :authenticate_user!, only: :secret
+  before_action :authenticate_user!, only: :secret
 
-	def index
-	end
+  def index
+  end
 
-	def secret
-	end
+  def secret
+  end
 end

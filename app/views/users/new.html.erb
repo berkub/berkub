@@ -1,16 +1,16 @@
 <%= simple_form_for @user, html: { data: { validate: "parsley" } } do |f| %>
-	<h1><%= t("users.new.title") %></h1>
+  <h1><%= t("users.new.title") %></h1>
 
-	<fieldset class="inline">
-		<%= f.input :first_name, autofocus: true %>
-		<%= f.input :last_name %>
-	</fieldset>
+  <fieldset class="inline">
+    <%= f.input :first_name, autofocus: true %>
+    <%= f.input :last_name %>
+  </fieldset>
 
-	<%= f.input :email %>
-	<%= f.input :password %>
+  <%= f.input :email %>
+  <%= f.input :password %>
 
-	<div class="actions">
-		<div class="beware"><%= t("users.create.beware.html", href: link_to(t("users.create.beware.terms"), "")) %></div>
-		<%= f.submit %>
-	</div>
+  <div class="actions">
+    <div class="beware"><%= t("users.create.beware.html", href: link_to(t("users.create.beware.terms"), "")) %></div>
+    <%= f.submit %>
+  </div>
 <% end %>
