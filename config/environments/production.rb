@@ -77,4 +77,8 @@ Rails.application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # Sending emails with Postmark
+  config.action_mailer.delivery_method = :postmark
+  config.action_mailer.postmark_settings = { api_key: "dcbca833-0cac-4fce-ba8d-687c560f3557" }
 end

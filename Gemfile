@@ -50,6 +50,7 @@ gem 'bourbon'
 gem 'neat'
 gem 'simple_form'
 gem 'parsley-rails'
+gem 'postmark-rails'
 
 group :development do
   gem 'thin'
