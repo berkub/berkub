@@ -15,6 +15,6 @@ module PasswordRecoverable
 private
 
   def generate_password_recovery_token
-    self.password_recovery_token = SecureRandom.hex(22).encode("utf-8")
+    self.password_recovery_token = SecureRandom.hex(13).encode("utf-8")
   end
 end
