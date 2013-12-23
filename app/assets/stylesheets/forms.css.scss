@@ -114,6 +114,9 @@ input {
     color: #222;
     @include transition(background-color .2s ease-in-out, border-color .2s ease-in-out);
 
+    // Get rid of the inner shadow at the top of the text field in mobile Safari.
+    -webkit-appearance: none;
+
     &:focus {
       border: 2px solid $input-border-color-focused;
     }
