@@ -26,4 +26,11 @@ Rails.application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  # Change the ActionMailer preview path since we're using Rspec and don't
+  # have a /test directory set by default.
+  config.action_mailer.preview_path = "#{Rails.root}/spec/mailers/previews"
+
+  # Set ActionMailer default url host to berkub.dev.
+  config.action_mailer.default_url_options = { host: "berkub.dev" }
 end

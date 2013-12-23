@@ -69,4 +69,5 @@ end
 
 group :test do
   gem 'database_cleaner'
+  gem 'mocha', require: false
 end

@@ -15,6 +15,10 @@ ru:
         create: "Войти"
       password:
         create: "Отправить инструкции"
+        update: "Сменить пароль"
+  user_mailer:
+    password_recovery_instructions:
+      subject: "Инструкции по восстановлению пароля"
   users:
     new:
       title: "Добро пожаловать"
@@ -32,6 +36,12 @@ ru:
     destroy:
       notice: ""
   passwords:
-    new:
-      title: "Забыли пароль? <br />Ничего страшного"
     recover: "Забыли пароль?"
+    new:
+      title: "Восстановление пароля"
+    create:
+      notice: "Инструкция по восстановлению была отправлена по вашему адресу."
+    edit:
+      title: "Смена пароля"
+    update:
+      notice: "Ваш пароль был изменен."
