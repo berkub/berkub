@@ -3,6 +3,7 @@ $mobile: new-breakpoint(max-width 500px 6);
 html, body {
   -webkit-font-smoothing: antialiased;
   font-family: "Open Sans", sans-serif;
+  background-color: #95c7a4;
 }
 
 // body {
@@ -18,7 +19,7 @@ body > .container {
 }
 
 body > header {
-  text-align: right;
+  text-align: center;
   padding: 1em;
   margin: 0 0 1.4em 0;
 
@@ -37,8 +38,7 @@ body > header {
       color: #888;
 
       &.logo {
-        float: left;
-        margin-top: 0 !important;
+        margin-top: em(128) !important;
       }
 
       &.login {
